@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+
+</head>
+<style>
+    .winner {
+        color: rgb(0, 255, 21);
+    }
+    
+    .loser {
+        color: red;
+    }
+    
+    .col {
+        margin: auto;
+        border: solid rgb(206, 127, 127) 10px;
+        border-radius: 8px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+
+<body>
+    <div class="container">
+        <div class="columns" style="margin: 50px;">
+            <div class="column is-one-third
+            col">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://images.unsplash.com/photo-1611762348135-5b09d2f0390d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Score keeper</p>
+                                <p class="subtitle is-6">Ping pong</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h1><span id="p1Disp">0</span> vs <span id="p2Disp">0</span></h1>
+                            <div><select name="choose" id="max">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                            </div>
+                            <button id="p1But">+1 Player1</button>
+                            <button id="p2But">+1 Player2</button>
+                            <button id="Rst">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<!-- <script>
+    const p1But = document.getElementById('p1But')
+    const p2 = document.querySelector('#p2But')
+
+    const p1Display = document.querySelector('#p1Display');
+    p1But.addEventListener("click", function() {
+        alert("helloe")
+    })
+</script> -->
+
+</html>
